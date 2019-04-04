@@ -1,4 +1,4 @@
-package com.bcopstein.FuncoesST;
+//package com.bcopstein.FuncoesST;
 
 import java.util.List;
 
