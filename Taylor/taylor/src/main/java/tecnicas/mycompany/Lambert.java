@@ -5,7 +5,7 @@ public static class Lambert
 {
     public static ArrayList<Double> lambertList(double x)
     {
-        if (x >= 1/Math.E) throw (IllegalArgumentException);
+        if (x >= 1/Math.E) throw new IllegalArgumentException();
         else
         {
             ArrayList<Double> termos = new ArrayList<Double>();
