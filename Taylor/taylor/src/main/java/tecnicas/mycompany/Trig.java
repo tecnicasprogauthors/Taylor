@@ -1,10 +1,9 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.lang.Math;
+import Util.java
 
 public class Trig {
-
-    Util u = new Util();
 
     public double cosine(double x, int n) {
 
@@ -13,12 +12,12 @@ public class Trig {
         double resp = 0;
 
         for (int i = 0; i < n; i++) {
-            resp = (Math.pow(-1, i) / u.fatorial(2 * i)) * Math.pow(x, (2 * i));
+            resp = (Math.pow(-1, i) / fatorial(2 * i)) * Math.pow(x, (2 * i));
             list.add(resp);
             resp = x;
         }
 
-        return u.somatorio(0, n, list);
+        return somatorio(0, n, list);
     }
 
     public double sine(double x, int n) {
@@ -28,10 +27,10 @@ public class Trig {
         double resp = 0;
 
         for (int i = 0; i < n; i++) {
-            resp = (Math.pow(-1, i) / u.fatorial((2 * i) + 1)) * Math.pow(x, ((2 * i)) + 1);
+            resp = (Math.pow(-1, i) / fatorial((2 * i) + 1)) * Math.pow(x, ((2 * i)) + 1);
             list.add(resp);
             resp = x;
         }
 
-        return u.somatorio(0, n, list);
+        return somatorio(0, n, list);
     }
